@@ -5,29 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TO-DO</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="toolbox-cont">
       <div class="toolbox-color-cont">
-        <div class="lightpink"></div>
-        <div class="lightgreen"></div>
-        <div class="lightblue"></div>
-        <div class="black"></div>
+        <div class="lightpink color"></div>
+        <div class="lightgreen color"></div>
+        <div class="lightblue color"></div>
+        <div class="black color"></div>
       </div>
       <div class="action-btn-cont">
-        <div class="add-btn"></div>
-        <div class="remove-btn"></div>
+        <div class="add-btn">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="remove-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
       </div>
     </div>
     <div class="main-cont"></div>
-    <div>
-        <textarea placeholder="Enter Your Task"></textarea>
-        <div class="priority-color-cont">
-            <div class="lightpink"></div>
-            <div class="lightgreen"></div>
-            <div class="lightblue"></div>
-            <div class="black"></div>
-        </div>
-    
+    <div class="modal-cont">
+      <textarea placeholder="Enter Your Task"></textarea>
+      <div class="priority-color-cont">
+        <div class="lightpink priority-color"></div>
+        <div class="lightgreen priority-color"></div>
+        <div class="lightblue priority-color"></div>
+        <div class="black priority-color"></div>
+      </div>
+    </div>
+    <div class="ticket-cont">
+      <div class="ticket-color"></div>
+      <div class="ticket-id"></div>
+      <div class="ticket-area"></div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
